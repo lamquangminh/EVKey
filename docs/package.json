@@ -1,12 +1,9 @@
 {
-  "name": "jekyll-theme-minimal-resume",
+  "name": "EVKey",
   "version": "1.0.0",
-  "description": "This is a simple Jekyll theme for a minimal resume website.",
+  "description": "EVKey - Vietnamese Keyboard",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Mauricio Urraco <mauriurraco@gmail.com>",
+  "author": "lamquangminh10@gmail.com",
   "license": "MIT",
   "dependencies": {
     "browser-sync": "^2.18.6",

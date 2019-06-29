@@ -1,6 +1,6 @@
 # Site settings
 title: EVKey
-description: Vietnamese keyboard - Bộ gõ tiếng Việt cho Windows
+description: Vietnamese Keyboard - Bộ gõ tiếng Việt cho Windows
 
 # User settings
 username: lamquangminh
@@ -17,4 +17,4 @@ google-analytics:
 
 exclude: ['package.json', 'src' , 'node_modules']
 
-theme: jekyll-theme-cayman
+#theme: jekyll-theme-cayman
