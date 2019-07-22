@@ -4863,7 +4863,3 @@ to {
 transform: perspective(400px)
 }
 }
-
-::-webkit-scrollbar {
-display: none;
-}
