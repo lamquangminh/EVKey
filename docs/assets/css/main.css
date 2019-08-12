@@ -4863,3 +4863,76 @@ to {
 transform: perspective(400px)
 }
 }
+
+/* additional CSS */
+
+.download{
+    margin: 42px 0 22px;
+}
+
+.download a{
+    transition: all .5s;
+    color: #4dd0e1;
+    border: 2px solid #4dd0e1;
+    text-decoration: none;
+    padding: 9px 18px;
+    font-size: 23px;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 0 15px 20px;
+}
+
+.download a:hover{
+    color: #fff;
+    background-color: #0098c7;
+    border-color: #0098c7;
+}
+
+#particles-js{
+    min-width: 240px;
+}
+
+.header{
+    margin: 45px 25px;
+}
+
+.header .site-description{
+    line-height: 1.4;
+}
+
+.keader{
+    margin-top: 0;
+    padding-top: 30px;
+}
+
+.kago img{
+    max-width: 145px;
+    max-height: 145px;
+}
+
+@media (min-width: 768px){
+    .header .site-title{
+        font-size: 64px;
+        padding-bottom: 5px;
+    }
+
+    .header .site-description{
+        font-size: 29px;
+    }
+}
+
+@media (max-width: 414px){
+    .download a{
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .kago img{
+        max-width: 130px;
+        max-height: 130px;
+    }
+
+    .header{
+        margin: 40px 25px;
+    }
+}
