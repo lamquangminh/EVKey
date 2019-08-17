@@ -1,3 +1,52 @@
+<button class="donate_block" onclick="ShowDonate();">Donate</button>
+<div id="donate_links">
+  <ul>
+    <li><a class="donate_link" href="https://www.paypal.me/lamquangminh" target="_black" rel="noopener">PayPal</a></li>
+    <li><a class="donate_link" href="https://unghotoi.com/1565708776nxjgz" target="_black" rel="noopener">UngHoToi</a></li>
+    <li><a id="donate_momo" class="donate_link" href="#">MoMo</a></li>
+    <li><a id="donate_vtpay" class="donate_link" href="#">ViettelPay</a></li>
+    <li><a id="donate_zalopay" class="donate_link" href="#">ZaloPay</a></li>
+  </ul>
+</div>
+
+<div id="momo_modal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h3 class="modal_header_text">Bạn hãy quét mã QR bên dưới bằng app MoMo</h3>
+    </div>
+    <div class="modal-body">
+      <img src="https://raw.githubusercontent.com/lamquangminh/EVKey/master/docs/assets/lqm-momo.png">
+    </div>
+  </div>
+</div>
+
+<div id="vtpay_modal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h3 class="modal_header_text">Bạn hãy quét mã QR bên dưới bằng app ViettelPay</h3>
+    </div>
+    <div class="modal-body">
+      <img src="https://raw.githubusercontent.com/lamquangminh/EVKey/master/docs/assets/lqm-vtpay.png">
+    </div>
+  </div>
+</div>
+
+<div id="zalopay_modal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h3 class="modal_header_text">Bạn hãy quét mã QR bên dưới bằng app ZaloPay</h3>
+    </div>
+    <div class="modal-body">
+      <img src="https://raw.githubusercontent.com/lamquangminh/EVKey/master/docs/assets/lqm-zalopay.png">
+    </div>
+  </div>
+</div>
+
+<!-- ******************************** -->
+
 <div id="particles-js">
   <div class="header">
 
@@ -26,3 +75,58 @@
   </div>
 
 </div>
+
+<!-- ******************************** -->
+
+<script>
+  function ShowDonate() {
+    var x = document.getElementById('donate_links');
+    if (x.style.display == 'block') {
+      x.style.display = 'none';
+    } else {
+      x.style.display = 'block';
+    }
+  }
+
+  var modal = document.getElementById("momo_modal");
+  var btn = document.getElementById("donate_momo");
+  var span = document.getElementsByClassName("close")[0];
+  btn.onclick = function() {
+    modal.classList.add("active");
+  }
+  span.onclick = function() {
+    modal.classList.remove("active");
+  }
+
+  var modal1 = document.getElementById("vtpay_modal");
+  var btn1 = document.getElementById("donate_vtpay");
+  var span1 = document.getElementsByClassName("close")[1];
+  btn1.onclick = function() {
+    modal1.classList.add("active");
+  }
+  span1.onclick = function() {
+    modal1.classList.remove("active");
+  }
+
+  var modal2 = document.getElementById("zalopay_modal");
+  var btn2 = document.getElementById("donate_zalopay");
+  var span2 = document.getElementsByClassName("close")[1];
+  btn2.onclick = function() {
+    modal2.classList.add("active");
+  }
+  span2.onclick = function() {
+    modal2.classList.remove("active");
+  }
+
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.classList.remove("active");
+    }
+    if (event.target == modal1) {
+      modal1.classList.remove("active");
+    }
+    if (event.target == modal2) {
+      modal2.classList.remove("active");
+    }
+  }
+</script>
