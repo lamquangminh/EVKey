@@ -33,6 +33,7 @@
   </div>
 </div>
 
+<!--
 <div id="zalopay_modal" class="modal">
   <div class="modal-content">
     <div class="modal-header">
@@ -44,6 +45,7 @@
     </div>
   </div>
 </div>
+-->
 
 <!-- ******************************** -->
 
@@ -108,7 +110,7 @@
     modal1.classList.remove("active");
   }
 
-  var modal2 = document.getElementById("zalopay_modal");
+  var modal2 = document.getElementById("zalopay_modal"); 
   var btn2 = document.getElementById("donate_zalopay");
   var span2 = document.getElementsByClassName("close")[2];
   btn2.onclick = function() {
@@ -117,7 +119,7 @@
   span2.onclick = function() {
     modal2.classList.remove("active");
   }
-
+  
   window.onclick = function(event) {
     if (event.target == modal) {
       modal.classList.remove("active");
