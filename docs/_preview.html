@@ -40,27 +40,27 @@
 
 <!-- ===== NỘI DUNG (content.html) ===== -->
 <style>
-  .evk-content { font-family: 'Montserrat', 'Antic Slab', sans-serif; background: #ffffff; color: #2b333f; position: relative; z-index: 2; line-height: 1.7; }
+  .evk-content { font-family: 'Montserrat', 'Antic Slab', sans-serif; background: #1a222c; color: #c2cbd6; position: relative; z-index: 2; line-height: 1.7; }
   .evk-content .evk-wrap { max-width: 920px; margin: 0 auto; padding: 0 20px; }
-  .evk-content section { padding: 60px 0; border-bottom: 1px solid #eceef1; }
-  .evk-content h2 { color: #1a222c; font-size: 30px; font-weight: 700; margin: 0 0 10px; padding: 0; }
-  .evk-content h3 { color: #1a222c; font-size: 21px; font-weight: 600; margin: 26px 0 6px; padding: 0; }
+  .evk-content section { padding: 60px 0; border-bottom: 1px solid #2a3440; }
+  .evk-content h2 { color: #ffffff; font-size: 30px; font-weight: 700; margin: 0 0 10px; padding: 0; }
+  .evk-content h3 { color: #ffffff; font-size: 21px; font-weight: 600; margin: 26px 0 6px; padding: 0; }
   .evk-content p { font-size: 17px; margin: 12px 0; }
   .evk-content ul, .evk-content ol { font-size: 17px; padding-left: 24px; }
   .evk-content li { margin: 8px 0; }
-  .evk-content a { color: #1f6feb; }
-  .evk-content .lead { font-size: 19px; color: #46505d; }
+  .evk-content a { color: #6ab0ff; }
+  .evk-content .lead { font-size: 19px; color: #aab3c0; }
   .evk-feature-grid { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 24px; }
-  .evk-feature { flex: 1 1 260px; background: #f6f8fa; border: 1px solid #eceef1; border-radius: 10px; padding: 20px 22px; }
+  .evk-feature { flex: 1 1 260px; background: #222c38; border: 1px solid #2f3a47; border-radius: 10px; padding: 20px 22px; }
   .evk-feature h3 { margin-top: 0; font-size: 18px; }
-  .evk-feature p { font-size: 15px; margin: 6px 0 0; color: #46505d; }
+  .evk-feature p { font-size: 15px; margin: 6px 0 0; color: #aab3c0; }
   .evk-shots { display: flex; flex-wrap: nowrap; gap: 18px; justify-content: center; margin-top: 24px; }
-  .evk-shot { flex: 1 1 0; min-width: 0; max-width: 50%; height: auto; border: 1px solid #d9dde2; border-radius: 8px; }
-  .evk-faq dt { font-weight: 700; color: #1a222c; margin-top: 20px; font-size: 18px; }
-  .evk-faq dd { margin: 6px 0 0; padding: 0; font-size: 16px; color: #46505d; }
+  .evk-shot { flex: 1 1 0; min-width: 0; max-width: 50%; height: auto; border: 1px solid #2f3a47; border-radius: 8px; }
+  .evk-faq dt { font-weight: 700; color: #ffffff; margin-top: 20px; font-size: 18px; }
+  .evk-faq dd { margin: 6px 0 0; padding: 0; font-size: 16px; color: #aab3c0; }
   .evk-scroll-hint { position: absolute; bottom: 24px; left: 50%; transform: translateX(-50%); z-index: 3; color: #fff; font-size: 34px; text-decoration: none; animation: evkBounce 1.6s infinite; }
   @keyframes evkBounce { 0%,100% { transform: translateX(-50%) translateY(0);} 50% { transform: translateX(-50%) translateY(10px);} }
-  .evk-footer { background: #1a222c; color: #aeb6c2; text-align: center; padding: 30px 20px; font-family: 'Montserrat', sans-serif; font-size: 14px; position: relative; z-index: 2; }
+  .evk-footer { background: #1a222c; color: #aeb6c2; text-align: center; padding: 30px 20px; font-family: 'Montserrat', sans-serif; font-size: 14px; position: relative; z-index: 2; border-top: 1px solid #2a3440; }
   .evk-footer a { color: #cdd5e0; text-decoration: none; margin: 0 8px; }
   .evk-footer a:hover { color: #fff; text-decoration: underline; }
 </style>
@@ -84,7 +84,7 @@
       <h2>Tính năng nổi bật</h2>
       <div class="evk-feature-grid">
         <div class="evk-feature"><h3>Hai cơ chế gõ: Keyboard hook &amp; IME</h3><p>Trên Windows, bạn có thể chọn giữa cơ chế <strong>Keyboard hook</strong> hoặc <strong>IME</strong> để có độ tương thích và ổn định tốt nhất với từng máy và từng ứng dụng.</p></div>
-        <div class="evk-feature"><h3>Chơi game không bị dính dấu</h3><p>Được tối ưu cho nhiều game phổ biến, hạn chế tình trạng dính dấu hay loạn dấu tiếng Việt khi đang chơi.</p></div>
+        <div class="evk-feature"><h3>Chơi game không bị loạn phím do dính ký tự tiếng Việt</h3><p>Được tối ưu cho nhiều game phổ biến, hạn chế tình trạng loạn phím do bị dính ký tự tiếng Việt khi đang chơi.</p></div>
         <div class="evk-feature"><h3>Sửa lỗi dấu trên trình duyệt</h3><p>Khắc phục lỗi mất dấu, sai dấu tiếng Việt khi gõ ở thanh địa chỉ và ô tìm kiếm của các trình duyệt web.</p></div>
         <div class="evk-feature"><h3>Tùy chỉnh riêng cho từng ứng dụng</h3><p>Thiết lập bật/tắt gõ tiếng Việt, chọn bảng mã... riêng cho mỗi phần mềm và tự động áp dụng khi bạn chuyển ứng dụng.</p></div>
         <div class="evk-feature"><h3>Gõ tắt (macro)</h3><p>Thiết lập từ viết tắt để tự động bung thành cụm từ dài, giúp tiết kiệm thời gian gõ.</p></div>
@@ -101,7 +101,7 @@
       <h3>Trên Windows</h3>
       <ol>
         <li>Tải tập tin <strong>EVKey.zip</strong> bằng nút <em>Tải về cho Windows</em> ở đầu trang.</li>
-        <li>Giải nén tập tin vừa tải về vào một thư mục bất kỳ.</li>
+        <li>Giải nén tập tin vừa tải về vào một thư mục bất kỳ. <strong>Lưu ý:</strong> nên chọn một thư mục cố định và sử dụng lâu dài về sau, tránh di chuyển hay xóa thư mục EVKey để phần mềm luôn hoạt động ổn định.</li>
         <li>Chạy <strong>EVKey64.exe</strong> nếu dùng Windows 64-bit, hoặc <strong>EVKey32.exe</strong> nếu dùng Windows 32-bit.</li>
         <li>Biểu tượng EVKey sẽ xuất hiện ở khay hệ thống (góc dưới bên phải màn hình).</li>
         <li>Nhấp chuột phải vào biểu tượng để chọn <strong>kiểu gõ</strong> (Telex/VNI) và <strong>bảng mã</strong> (Unicode).</li>
@@ -113,11 +113,6 @@
         <li>Vào <em>System Settings → Privacy &amp; Security → Accessibility</em> và cấp quyền cho EVKey để bộ gõ hoạt động.</li>
         <li>Chọn kiểu gõ và bảng mã từ biểu tượng EVKey trên thanh menu.</li>
       </ol>
-      <h3>Mẹo sử dụng</h3>
-      <ul>
-        <li>Dùng phím tắt để bật/tắt nhanh chế độ gõ tiếng Việt khi cần gõ tiếng Anh.</li>
-        <li>Nếu gõ bị lỗi trong một phần mềm hoặc game cụ thể, hãy thử đổi <em>cách gửi phím</em> trong phần cài đặt của EVKey.</li>
-      </ul>
     </section>
 
     <section id="faq">
@@ -137,11 +132,11 @@
 
 <footer class="evk-footer">
   <p>
-    <a href="_preview.html">Trang chủ</a> ·
-    <a href="_preview-privacy.html">Chính sách bảo mật</a> ·
+    <a href="_preview.html">Home</a> ·
+    <a href="_preview-privacy.html">Privacy Policy</a> ·
     <a href="https://www.facebook.com/bogotiengvietevkey" target="_blank" rel="noopener">Facebook</a>
   </p>
-  <p>&copy; EVKey — Bộ gõ tiếng Việt cho PC. Liên hệ: lamquangminh10@gmail.com</p>
+  <p>&copy; EVKey — Vietnamese Keyboard for PC. Contact: lamquangminh10@gmail.com</p>
 </footer>
 
 </body>
